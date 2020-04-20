@@ -1,0 +1,73 @@
+<form autocomplete="off" enctype="multipart/form-data">
+
+    {{!-- File Picker Sources --}}
+    <nav class="tabs">
+        {{#each sources as |source id|}}
+        <a class="item" data-tab="{{id}}"><i class="{{source.icon}}"></i> {{source.label}}</a>
+        {{/each}}
+    </nav>
+
+    <section class="filepicker-body">
+        <div class="form-group current-dir">
+            <button class="back" {{#unless canGoBack}}disabled{{/unless}}>
+                <i class="fas fa-level-up-alt fa-flip-horizontal fa-fw"></i>
+            </button>
+            <input type="text" name="target" value="{{target}}"/>
+        </div>
+
+        {{#if isS3}}
+        <div class="form-group bucket">
+            <label>S3 Bucket</label>
+            <select name="bucket">
+                {{#select source.bucket}}
+                {{#each source.buckets}}
+                <option value="{{this}}">{{this}}</option>
+                {{/each}}
+                {{/select}}
+            </select>
+        </div>
+        {{/if}}
+
+        <div class="form-group filter-dir">
+            <label for="filter">Filter Results</label>
+            <input type="text" name="filter" placeholder="Search"/>
+            <div onclick="toggleThumbnails(this);">Toggle Thumbnails</div>
+        </div>
+
+        {{#unless noResults}}
+        <ol class="file-directory">
+            {{#each dirs}}
+            <li class="dir" data-path="{{this.path}}">
+                <i class="fas fa-folder fa-fw"></i>{{this.name}}
+            </li>
+            {{/each}}
+            {{#each files}}
+            <li class="file" data-path="{{this.url}}">
+                <img class="thumbnail" width="50" height="50" alt="{{this.name}}" title="{{this.name}}">
+                <div class="filename"><i class="fas fa-file fa-fw"></i>{{this.name}}</div>
+            </li>
+            {{/each}}
+        </ol>
+        {{else}}
+        <p class="note">No matching results found in this location.</p>
+        {{/unless}}
+    </section>
+
+    <footer class="form-footer">
+        {{#if canUpload}}
+        <div class="form-group upload-file">
+            <label><i class="fas fa-upload fa-fw"></i> Upload</label>
+            <input type="file" name="upload"/>
+        </div>
+        {{/if}}
+
+        <div class="form-group selected-file">
+            <label><i class="fas fa-file fa-fw"></i> Selected</label>
+            <input type="text" name="file" value="{{request}}"/>
+        </div>
+
+        <button type="submit" name="submit">
+            <i class="far fa-save"></i> Select File
+        </button>
+    </footer>
+</form>
