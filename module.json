@@ -7,8 +7,8 @@
 	"scripts": ["./better-filepicker.js"],
 	"styles": ["./better-filepicker.css"],
 	"packs": [],
-    "url": "https://github.com/Adriannom/fvtt-better-filepicker",
-    "manifest": "https://raw.githubusercontent.com/Adriannom/fvtt-better-filepicker/master/module.json",
-    "download": "https://github.com/Adriannom/fvtt-better-filepicker/archive/master.zip",
-    "minimumCoreVersion": "0.4.4"
+  "url": "https://github.com/Adriannom/fvtt-better-filepicker",
+  "manifest": "https://raw.githubusercontent.com/Adriannom/fvtt-better-filepicker/master/module.json",
+  "download": "https://github.com/Adriannom/fvtt-better-filepicker/archive/master.zip",
+  "minimumCoreVersion": "0.4.4"
 }
