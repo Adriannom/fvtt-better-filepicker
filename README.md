@@ -1,6 +1,9 @@
 # fvtt-better-filepicker
 Module for Foundry Virtual Table Top. Toggle image thumbnails in the file picker. Also improves file picker visibility on small screens.
 
+## Compatibility
+Not compatible with image-previewer. If you discover any others please submit an issue and I'll include it here.
+
 ## Installation
 ### Method 1
 - Start up Foundry and click "Install Module" in the "Add-On Modules" tab.
