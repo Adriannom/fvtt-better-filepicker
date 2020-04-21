@@ -14,7 +14,8 @@ Hooks.on("init", () => {
         template: "modules/better-filepicker/filepicker.html",
         classes: ["filepicker"],
         width: 500,
-        tabs: [{navSelector: ".tabs"}]
+        tabs: [{navSelector: ".tabs"}],
+        resizable: true
       });
     }
   });
