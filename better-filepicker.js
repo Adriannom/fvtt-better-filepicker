@@ -1,5 +1,5 @@
 function toggleThumbnails(e) {
-  let lis = e.parentElement.parentElement.querySelectorAll('.file-directory li');
+  let lis = e.parentElement.parentElement.querySelectorAll('.file-directory li.file');
   lis.forEach((li) => {
     li.classList.toggle('thumbsUp');
     li.querySelector('img').src = li.getAttribute('data-path');
