@@ -31,7 +31,11 @@
         <div class="form-group filter-dir">
             <label for="filter">Filter Results</label>
             <input type="text" name="filter" placeholder="Search"/>
-            <div onclick="toggleThumbnails(this);">Toggle Thumbnails</div>
+            <div class="thumbnail-controls">
+              <div onclick="toggleThumbnails(this);" style="background-image: url(modules/better-filepicker/images/filename-list-icon.png)"></div>
+              <div onclick="toggleThumbnails(this, 'small');" style="background-image: url(modules/better-filepicker/images/small-thumbs-icon.png)"></div>
+              <div onclick="toggleThumbnails(this, 'large');" style="background-image: url(modules/better-filepicker/images/large-thumbs-icon.png)"></div>
+            </div>
         </div>
 
         {{#unless noResults}}

@@ -3,13 +3,15 @@
 }
 .filepicker .file-directory .thumbnail {
   display: none;
+}
+.filepicker .file-directory .small-thumbs .thumbnail,
+.filepicker .file-directory .large-thumbs .thumbnail {
+  display: block;
   width: 50px;
   height: 50px;
 }
-.filepicker .file-directory .thumbsUp .thumbnail {
-  display: block;
-}
-.filepicker .file-directory .thumbsUp {
+.filepicker .file-directory .small-thumbs,
+.filepicker .file-directory .large-thumbs {
   width: 50px;
   height: 50px;
   float: left;
@@ -17,16 +19,32 @@
   padding: 0;
   border-bottom: none;
 }
-.filepicker .file-directory .thumbsUp .filename {
+.filepicker .file-directory .large-thumbs,
+.filepicker .file-directory .large-thumbs .thumbnail {
+  width: 100px;
+  height: 100px;
+}
+.filepicker .file-directory .small-thumbs .filename,
+.filepicker .file-directory .large-thumbs .filename {
   display: none;
 }
-.filepicker .filter-dir div {
-  padding: 5px 10px 2px 10px;
-  text-decoration: underline;
-  cursor: pointer;
+.filepicker .thumbnail-controls {
   line-height: 1em;
   flex: none;
+  padding-left: 5px;
 }
-.filepicker .filter-dir div:hover {
-  color: #999;
+.filepicker .thumbnail-controls div {
+  border-radius: 3px;
+  border: 1px solid #666;
+  background-color: #aaa;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  float: left;
+  margin-right: 2px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.filepicker .thumbnail-controls div:hover {
+  background-color: #ddd;
 }

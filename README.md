@@ -18,8 +18,8 @@ Not compatible with image-previewer. If you discover any others please submit an
 - Launch a world, then go to the settings tab and enable the module in module settings.
 
 ## Usage
-When choosing an image in the file picker there will be a new button, "Toggle Thumbnails". Click it to load all the images in the current directory as thumbnails.
+When choosing an image in the file picker there will be new buttons, file list, small thumbnails and large thumbnails. Click one of the thumbnail buttons to load all the images in the current directory as thumbnails.
 
-![Better Filepicker Preview](https://raw.githubusercontent.com/Adriannom/fvtt-better-filepicker/master/better-filepicker-preview.png)
+![Better Filepicker Preview](https://raw.githubusercontent.com/Adriannom/fvtt-better-filepicker/master/images/better-filepicker-preview.png)
 
-Note that it will load the full size image and display it really small, so lots of 10mb files would take time and bandwidth to display. To save bandwidth, the images won't actually load until you click the Toggle Thumbnails button.
+Note that it will load the full size image and display it really small, so lots of 10mb files would take time and bandwidth to display. To save bandwidth, the images won't actually load until you click a thumbnails button.
