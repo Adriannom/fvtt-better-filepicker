@@ -1,5 +1,4 @@
 function toggleThumbnails(e, size) {
-  console.log("Running");
   let lis = e.parentElement.parentElement.parentElement.querySelectorAll('.file-directory li.file');
   lis.forEach((li) => {
     li.classList.remove('small-thumbs', 'large-thumbs');

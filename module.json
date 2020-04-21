@@ -2,7 +2,7 @@
 	"name": "better-filepicker",
 	"title": "Better Filepicker",
 	"description": "Toggle image thumbnails in the file picker. Also improves file picker visibility on small screens.",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"author": "Adriannom#0237",
 	"scripts": ["./better-filepicker.js"],
 	"styles": ["./better-filepicker.css"],
