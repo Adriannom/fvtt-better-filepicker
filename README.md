@@ -1,4 +1,7 @@
 # fvtt-better-filepicker
+
+THIS MODULE IS NOW DEPRECATED since the features it provides are now native to Foundry.
+
 Module for Foundry Virtual Table Top. Toggle image thumbnails in the file picker. Also improves file picker visibility on small screens.
 
 ## Compatibility
